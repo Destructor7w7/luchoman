@@ -1,0 +1,323 @@
+ *{ box-sizing: border-box;margin: 0%;padding: 0%; transition: 1s ;color: black;} 
+/* fondo */
+body{ background-image: url("../imagenes/fondo.jpg");background-repeat: repeat-x;background-size: cover;background-position-y: 0px;background-attachment: fixed;}
+/* contenedores */
+.margenes{ max-width: 1300px;width:110%;margin: auto; padding: 0px;}
+/* #main {
+        width: 1050px;
+        height: 400px;
+        border: 1px solid #c3c3c3;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      
+      #main div {
+        width: 50px;
+        height: 50px;
+      } */
+.contenedor{display: grid;gap: 30px;padding: 0px;margin-top: 100px; background-color: none;text-align: center;font-size: 20px;font-family: 'Goldman', cursive;}
+/* contenedor de titulo */
+.titulo{ display: grid;margin-top:-50px;margin-left: 90px;border: solid 4px rgb(0, 0, 0);max-width: 1200px;border-top: none;border-left: none;box-shadow: 3px 5px 10px wheat;margin-bottom:0px;padding: 30px;background-color: rgb(15, 81, 173);border-radius: 30px 30px 40px 30px; }
+/* POCICION DE LA IMAGENES */
+.back{position: grid;border: #ffffcc 1px solid;margin-top: -210px;}
+.obciones{display: grid;grid-template-columns: 1fr 1fr 1fr ;gap: 30px;padding: 20px;
+background-color: none;font-size: 15px;
+}
+.obcionesbar{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;gap: 30px;padding: 30px;
+background-color: none;font-size: 15px;
+}
+.margen2{display: block;border: 7px solid rgb(0, 0, 0);border-left: none;border-top: none ;background-color: rgb(255, 255, 255);max-width: 1130px;padding: 50px;margin-left: 120px;margin-top: -30px;border-radius: 0px 0px 30px 30px;box-shadow: 3px 5px 25px  wheat;   
+}
+span[data-descr] {position: relative;text-decoration: underline;color: #00F;cursor: help;outline: none;
+  }
+  span[data-descr]:hover::after,
+  span[data-descr]:focus::after {content: attr(data-descr);position: absolute;left: 0;top: 24px;min-width: 200px;border: 1px ;border-radius: 10px;background-color: #ffffcc;padding: 12px;font-size: 14px;z-index: 1;
+  }
+/* imagenes */
+.imagens{width: 220px;border-radius: 100px;transition: 2s;
+    
+}
+.imagens:hover{background-color: white;transition: 2s;background-image: url("../imagenes/tuerca.png");background-repeat: repeat-x;background-size: cover;opacity: 2;
+    
+}
+
+.imagens:hover{transform: rotate( 1440deg);
+}
+
+.logo{position: absolute;top: 30px;left: 30px;border: solid 5px rgb(0, 0, 0);border-radius: 300px;border-left: none;border-top: none;box-shadow: 3px 5px 10px  wheat;transition: 2s;background-color: rgb(255, 255, 255);
+ }
+ .logo:hover{transform: rotate( 760deg);box-shadow: 3px 5px 25px  wheat;border-radius: 20px;
+}
+/* textos */
+a{text-decoration: none;color: rgb(255, 255, 255);
+}
+.textobar{color:#ffffcc;font-size: 15px;
+}
+.texto2{display: grid;grid-template-columns: 1fr 1fr ;color: #ffffcc;
+}
+/* items de formulario */
+
+
+
+/* barra de bar  */
+
+.conbar{background-color:rgb(15, 81, 173);margin-left: -50px;margin-right: -50px;margin-bottom: -50px;border-radius: 0px 0px 20px 20px;height: 100px;margin-top: 100px;
+}
+@media screen and (max-width: 1000px){
+    .logo{
+      left:400px;
+    }
+    .obciones{
+    
+        grid-template-columns: 1fr 1fr  ;
+        gap: 30px;
+        padding: 20px;
+        
+    }
+    .titulo{
+        margin-top: 90px;
+        margin-left: 55px;
+        font-size: 15px;
+        max-width: 700px;
+        border-top: none;
+        border-left: none;
+        margin-bottom:0px;
+        padding: 20px; 
+    }
+    
+    .margen2{
+        max-width: 800px;
+        margin-left: 20px;
+        border-radius: 30px 30px 30px 30px;
+    
+    }
+    .margenes{
+        max-width: 800px;
+        padding-left: 0px;
+        
+    }
+         
+    }
+@media screen and (max-width: 900px){
+    .logo{
+        left:350px;
+      }
+
+}
+ @media screen and (max-width: 800px){
+.logo{
+  left:300px;
+}
+.obciones{
+
+    grid-template-columns: 1fr   ;
+    gap: 30px;
+    padding: 20px;
+    
+}
+.titulo{
+    display: block;
+    margin-top: 90px;
+    margin-left: 30px;
+
+    font-size: 13px;
+    max-width: 700px;
+    border-top: none;
+    border-left: none;
+    margin-bottom:0px;
+    padding: 20px;
+    
+
+}
+
+.margen2{
+    max-width: 800px;
+    margin-left: 10px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+.margenes{
+    
+    max-width: 750px;
+}   
+}
+   @media screen and (max-width: 700px){
+    .logo{
+      left:280px;
+    }
+    .obciones{
+    
+        grid-template-columns: 1fr   ;
+        gap: 30px;
+        padding: 20px;
+        
+    }
+    .titulo{
+        display: block;
+        margin-top: 90px;
+        margin-left: 30;
+        font-size: 13px;
+        max-width: 600px;
+        border-top: none;
+        border-left: not;
+        margin-bottom:0px;
+        padding: 20p 
+    }
+    
+    .margen2{
+        max-width: 650px;
+        margin-left:30px;
+        border-radius: 30px 30px 30px 30px;
+    
+    }
+    .margenes{
+        
+        max-width: 650px;
+    }
+         
+    }
+      @media screen and (max-width: 600px){
+        .logo{
+          left:210px;
+        }
+        .obciones{
+        
+            grid-template-columns: 1fr   ;
+            gap: 30px;
+            padding: 20px;
+            
+        }
+        .titulo{
+            display: block;
+            margin-top: 90px;
+            margin-left: 10px;
+            font-size: 13px;
+            max-width: 700px;
+            border-top: none;
+            border-left: none;
+            margin-bottom:0px;
+            padding: 20px; 
+        }
+        
+        .margen2{
+            max-width: 800px;
+            margin-left: 10px;
+            border-radius: 30px 30px 30px 30px;
+        
+        }
+        .margenes{
+            
+            max-width: 450px;
+        }
+             
+        }
+        @media screen and (max-width: 411px){
+            .logo{
+              left:130px;
+            }   
+            .titulo{
+                font-size: 12px;
+                max-width: 390px;
+                margin-left: 12px;
+            } 
+            .margen2{
+                max-width: 378px;
+                margin-left: 20px;
+                border-radius: 30px 30px 30px 30px;
+                font-size: 19px;
+            
+            }
+            .obciones{
+                margin-left: -30px ;
+
+            }
+            }
+            @media screen and (max-width: 375px){
+                .titulo{
+                    width: 300px;
+                    font-size: 10px;
+                    margin-left:50px;
+                }
+                .margen2{
+                    max-width: 340px;
+                    margin-left: 20px;
+                    font-size: 19px;
+                }
+                .obciones{
+                    margin-left: -100px;
+                    font-size: 10px;
+                   padding: 100px;
+                }
+            }
+               @media screen and (max-width: 360px){
+            .logo{
+              left:120px;
+            }   
+            .titulo{
+                font-size: 10px;
+                max-width: 300px;
+                margin-left: 40px;
+            } 
+            .margen2{
+                max-width: 350px;
+                margin-left: 20px;
+                border-radius: 30px 30px 30px 30px;
+                font-size: 15px;
+            
+            }
+            .obciones{
+                margin-left: -100px ;
+
+
+            }
+            }
+                @media screen and (max-width: 280px){
+                .logo{
+                   
+                    width: 110px;
+                    left: 90px;
+                }
+                .titulo{
+                    width: 240px;
+                    font-size: 8px;
+                    margin-left: 25px;
+                }
+                .obciones{
+                    margin-left: -140px;
+                    font-size: 10px;
+                   padding: 100px;
+                }
+                .margen2{
+                    max-width: 250px;
+                    margin-left: 20px;
+                    font-size: 19px;
+                }
+    
+    
+                }
+                   @media screen and (max-width: 280px){
+            .logo{
+               
+                width: 110px;
+                left: 90px;
+            }
+            .titulo{
+                width: 240px;
+                font-size: 8px;
+                margin-left: 25px;
+            }
+            .obciones{
+                margin-left: -140px;
+                font-size: 10px;
+               padding: 100px;
+            }
+            .margen2{
+                max-width: 250px;
+                margin-left: 20px;
+                font-size: 19px;
+            }
+
+
+            }
+    
+            
